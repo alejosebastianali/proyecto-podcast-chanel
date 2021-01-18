@@ -1,0 +1,752 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  margin: 0px;
+  line-height: 0px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .cont-b {
+  padding: 63px 16px 24px 16px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+}
+
+header nav {
+  background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+header nav a {
+  color: #FFFFFF;
+}
+
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+  background-color: #0000EC;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+header nav ul a {
+  display: block;
+  color: #FFFFFF;
+  padding: 19px;
+  text-decoration: none;
+}
+
+header nav ul :link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header nav ul :visited {
+  color: #FFFFFF;
+}
+
+header nav ul :hover {
+  color: #00F3BB;
+  text-decoration: line-through;
+  background: #0000A3;
+}
+
+header nav ul :active {
+  color: rgba(6, 10, 36, 0.56);
+  font-weight: lighter;
+  text-decoration: line-through;
+}
+
+header nav .logo {
+  float: left;
+  display: block;
+  padding: 10px 16px;
+  width: 24px;
+  height: 24px;
+}
+
+header nav .logo img {
+  width: 100%;
+  height: auto;
+}
+
+header nav .menu {
+  clear: both;
+  max-height: 0;
+  -webkit-transition: max-height .2s ease-out;
+  transition: max-height .2s ease-out;
+}
+
+header nav .menu-icono {
+  padding: 21px 16px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+header nav .menu-icono .nav-icono {
+  background-color: #060A24;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+header nav .menu-icono :before {
+  background-color: #060A24;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 5px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+header nav .menu-icono :after {
+  background-color: #060A24;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -5px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+}
+
+header nav .menu-boton {
+  display: none;
+}
+
+header nav .menu-boton:checked ~ .menu {
+  max-height: 240px;
+}
+
+header nav .menu-boton:checked ~ .menu-icono .nav-icono:after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+header nav .menu-boton:checked ~ .menu-icono .nav-icono {
+  background-color: transparent;
+}
+
+header nav .menu-boton:checked ~ .menu-icono .nav-icono:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+main section#episodios .cont-a {
+  position: absolute;
+  width: 100%;
+  padding: 0px 11px;
+  margin-top: 127px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 11px 0px;
+}
+
+main section#episodios .cont-b {
+  position: absolute;
+  width: 100%;
+  padding: 28px 16px 0px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main section#venimos .cont-c {
+  width: 100%;
+  padding: 0px 16px;
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main section#venimos .cont-c .mover {
+  -webkit-transform: translateY(-71.5px);
+          transform: translateY(-71.5px);
+}
+
+main section#venimos .cont-c div#imagen {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
+main section#invitados .cont-b {
+  padding: 0px 16px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+}
+
+main section#invitados .cont-d {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  line-height: 0px;
+}
+
+main section#invitados .cont-d img {
+  width: 100%;
+  height: auto;
+  line-height: 0px;
+  margin: -1px 0px;
+}
+
+main section#temas .cont-b {
+  padding: 0px 16px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+}
+
+main section#temas .cont-e {
+  display: -ms-grid;
+  display: grid;
+  margin: 37px auto 42px auto;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  text-align: center;
+}
+
+main section#temas .cont-e img {
+  width: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+main section#novedades {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main section#novedades .cont-f {
+  width: 100%;
+  padding: 0px 16px;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+footer .cont-footer {
+  padding: 24px 0px 16px 0px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer div#redes-sociales {
+  width: 240px;
+  height: auto;
+  margin: 0px 0px;
+  padding: 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+footer h6 {
+  color: #060A24;
+}
+
+footer .redes {
+  font-size: 20px;
+}
+
+footer .redes :link {
+  text-decoration: none;
+  color: #060A24;
+}
+
+footer .redes :visited {
+  color: #060A24;
+}
+
+footer .redes :hover {
+  color: #00F3BB;
+}
+
+footer .redes :active {
+  color: rgba(6, 10, 36, 0.56);
+  font-weight: lighter;
+}
+
+.texto-anterior::before {
+  content: "Un podcast ";
+}
+
+.texto-posterior::after {
+  content: ". Nuevos episodios, todos los jueves cada 15 días.";
+}
+
+.boton {
+  background-color: #00F3BB;
+  display: inline-block;
+  width: 100%;
+}
+
+.boton :link {
+  text-decoration: none;
+}
+
+.boton :hover {
+  color: #FFFFFF;
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+svg#oblicuo-a {
+  width: 100%;
+  height: 1203px;
+}
+
+svg#oblicuo-b {
+  width: 100%;
+  height: 341px;
+}
+
+.oblicuo-a {
+  width: 100%;
+  height: 1203.5px;
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  position: relative;
+  z-index: -1;
+}
+
+.spotify {
+  width: 100%;
+  height: 232px;
+  border: 0;
+}
+
+.push-logo {
+  margin-right: 0px;
+}
+
+.azul {
+  color: #060A24;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.resize {
+  width: 287px;
+  height: auto;
+}
+
+h1 {
+  font-family: "IBM Plex Sans", monospace;
+  font-size: 36px;
+  margin: 10px auto;
+  color: #060A24;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", monospace;
+  font-size: 36px;
+  color: #060A24;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", monospace;
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+
+h4 {
+  font-family: "IBM Plex Sans", monospace;
+  font-size: 24px;
+  color: #060A24;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+}
+
+h5 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  padding: 13px 43px;
+  margin: 0px;
+  color: #060A24;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+h6 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+  margin: 0px;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  color: #060A24;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 769px) {
+  header .cont-b {
+    padding: 200px 200px 70px 200px;
+  }
+  header nav {
+    width: 100%;
+    padding: 0px 10%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  header nav ul {
+    background-color: #FFFFFF;
+  }
+  header nav ul :hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+    background: #FFFFFF;
+  }
+  header nav ul :active {
+    color: rgba(6, 10, 36, 0.56);
+    font-weight: lighter;
+    text-decoration: line-through;
+  }
+  header nav ul li {
+    float: left;
+  }
+  header nav ul a {
+    padding: 30px 0px 30px 48px;
+  }
+  header nav .logo {
+    width: 36px;
+    height: 36px;
+    padding: 20px 0px 0px 0px;
+  }
+  header nav .logo img {
+    width: 100%;
+    height: auto;
+  }
+  header nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  header nav .menu-icono {
+    display: none;
+  }
+  header .azul {
+    color: #0000EC;
+  }
+  header br#salto {
+    display: none;
+  }
+  main section#episodios .cont-a {
+    padding: 0px 100px;
+    height: 100%;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 200px 200px;
+        grid-template-rows: 200px 200px;
+    grid-gap: 72px;
+    margin: 275px 0px;
+  }
+  main section#episodios .cont-b {
+    padding: 0px 200px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 93px;
+    position: absolute;
+  }
+  main section#venimos .cont-c {
+    padding: 0 10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  main section#venimos .cont-c .mover {
+    -webkit-transform: translateY(-71.5px);
+            transform: translateY(-71.5px);
+  }
+  main section#venimos .cont-c div#imagen {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: center;
+  }
+  main section#venimos .cont-c .ancho {
+    width: 50%;
+  }
+  main section#invitados .cont-b {
+    padding: 0px 200px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    position: relative;
+  }
+  main section#invitados .cont-d {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 0px;
+    line-height: 0px;
+  }
+  main section#invitados .cont-d img {
+    width: 100%;
+    height: auto;
+    line-height: 0px;
+    margin: -1px 0px;
+  }
+  main section#temas .cont-b {
+    padding: 0px 200px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    position: relative;
+  }
+  main section#temas .cont-e {
+    display: -ms-grid;
+    display: grid;
+    margin: 69px 80px;
+    justify-items: center;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 0px;
+    text-align: center;
+  }
+  main section#temas .cont-e img {
+    width: 104px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }
+  main section#novedades .cont-f {
+    padding: 120px 0px;
+    text-align: center;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  footer {
+    width: 100%;
+    padding: 0px 10%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  footer .cont-footer {
+    padding: 36px 0px 31px 0px;
+    margin: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer h6 {
+    color: #060A24;
+  }
+  footer .redes {
+    font-size: 20px;
+  }
+  footer .redes :link {
+    text-decoration: none;
+    color: #060A24;
+  }
+  footer .redes :visited {
+    color: #060A24;
+  }
+  footer .redes :hover {
+    color: #00F3BB;
+  }
+  footer .redes :active {
+    color: rgba(6, 10, 36, 0.56);
+    font-weight: lighter;
+  }
+  .texto-anterior::before {
+    content: "El portal de podcasts ";
+  }
+  .texto-posterior::after {
+    content: " y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+  }
+  svg#oblicuo-a {
+    width: 100%;
+    height: 1042px;
+  }
+  svg#oblicuo-b {
+    width: 100%;
+    height: 518px;
+  }
+  .push-logo {
+    margin-right: auto;
+  }
+  .boton {
+    width: auto;
+  }
+  .resize {
+    width: auto;
+    height: 660px;
+  }
+  h1 {
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: 84px;
+  }
+  h2 {
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 62px;
+  }
+  h3 {
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: 62px;
+  }
+  h4 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+  }
+  h5 {
+    padding: 16px 59px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  h6 {
+    color: #060A24;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .resize {
+    width: auto;
+    height: 519px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
